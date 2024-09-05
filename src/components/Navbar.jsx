@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
+import { IoMdArrowForward } from "react-icons/io";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -11,19 +12,22 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-black stciky top-0 relative w-full p-5 border-b border-gray-300 text-white flex justify-around items-center">
-        <h1 className="font-serif text-xl md:text-2xl font-bold cursor-pointer">
+      <nav className="bg-black stciky top-0 relative w-full p-5 border-b border-gray-800 text-white flex justify-around items-center">
+        <h1 className="text-2xl md:text-3xl font-bold cursor-pointer">
           Verdict
         </h1>
 
         <ul className="gap-4 hidden md:flex items-center">
           {NavData.map((d) => (
-            <li key={d.id} className="text-white cursor-pointer md:text-lg">
+            <li key={d.id} className="nav">
               {d.title}
             </li>
           ))}
-          <button className="text-white bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold">
+          <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
             Try Now!
+            <span className="flex ml-2">
+              <IoMdArrowForward className="text-white bg-blue-500 outline-none" size={20}/>
+            </span>
           </button>
         </ul>
 
