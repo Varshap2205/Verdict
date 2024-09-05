@@ -79,7 +79,7 @@ function Testimonial() {
 
           <div class="mb-8 sm:break-inside-avoid">
             <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
@@ -87,7 +87,7 @@ function Testimonial() {
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5"
@@ -130,13 +130,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700">
+              <p class="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
                 mollitia rerum quo unde neque atque molestias quas pariatur!
                 Sint, maxime?
@@ -146,7 +146,7 @@ function Testimonial() {
 
           <div class="mb-8 sm:break-inside-avoid">
             <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
@@ -154,7 +154,7 @@ function Testimonial() {
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5"
@@ -197,13 +197,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700">
+              <p class="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reprehenderit esse delectus, maiores fugit, reiciendis culpa
                 inventore sint accusantium libero dolore eos quasi a ex aliquam
@@ -214,7 +214,7 @@ function Testimonial() {
 
           <div class="mb-8 sm:break-inside-avoid">
             <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
@@ -222,7 +222,7 @@ function Testimonial() {
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5"
@@ -265,13 +265,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700">
+              <p class="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
                 fuga?
               </p>
@@ -280,7 +280,7 @@ function Testimonial() {
 
           <div class="mb-8 sm:break-inside-avoid">
             <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
@@ -288,7 +288,7 @@ function Testimonial() {
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5"
@@ -331,13 +331,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700">
+              <p class="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Cupiditate officia natus blanditiis rerum incidunt ex autem
                 repudiandae doloribus eveniet quia? Culpa commodi quae atque
@@ -351,7 +351,7 @@ function Testimonial() {
 
           <div class="mb-8 sm:break-inside-avoid">
             <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
@@ -359,7 +359,7 @@ function Testimonial() {
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5"
@@ -402,13 +402,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700">
+              <p class="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
                 rerum. Nobis laborum praesentium necessitatibus vero.
               </p>
@@ -417,7 +417,7 @@ function Testimonial() {
 
           <div class="mb-8 sm:break-inside-avoid">
             <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
@@ -425,7 +425,7 @@ function Testimonial() {
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5"
@@ -468,13 +468,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700">
+              <p class="mt-4 text-gray-700 bg-white">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Maiores quaerat quasi ipsa repellendus quam! Beatae pariatur
                 quia distinctio fugit repellendus repudiandae nostrum
@@ -485,7 +485,7 @@ function Testimonial() {
 
           <div class="mb-8 sm:break-inside-avoid">
             <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
@@ -493,7 +493,7 @@ function Testimonial() {
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5"
@@ -536,13 +536,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700">
+              <p class="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit,
                 modi!
               </p>
@@ -551,7 +551,7 @@ function Testimonial() {
 
           <div class="mb-8 sm:break-inside-avoid">
             <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4">
+              <div class="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
@@ -559,7 +559,7 @@ function Testimonial() {
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500">
+                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="size-5"
@@ -602,13 +602,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900">
+                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700">
+              <p class="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 numquam, unde molestiae commodi temporibus dicta.
               </p>
