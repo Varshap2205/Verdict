@@ -8,7 +8,7 @@ import Educate from "./LandingPage/components/Educate";
 function App() {
   return (
     <>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 mt-2">
         <Educate/>
         <Testimonial/>
         <Poster1 />
