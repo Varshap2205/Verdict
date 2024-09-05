@@ -2,13 +2,13 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white py-10">
+    <footer className="bg-black text-white py-10 px-10">
       <div className="container mx-auto flex flex-col md:flex-row justify-between gap-10 px-5 md:px-0">
         <div>
           <h3 className="font-bold text-gray-400 mb-4">WHAT</h3>
           <ul>
             <li className="mb-2">
-              <a href="#" className="hover:text-gray-300">
+              <a href="/" className="hover:text-gray-300">
                 How it Works
               </a>
             </li>
