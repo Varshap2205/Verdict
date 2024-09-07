@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { IoMdArrowForward } from "react-icons/io";
-
+import Auth from "../Auth/Auth";
+import { Link } from "react-router-dom";
 function Navbar() {
   const [nav, setNav] = useState(false);
 
@@ -23,12 +24,17 @@ function Navbar() {
               {d.title}
             </li>
           ))}
-          <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
-            Try Now!
-            <span className="flex ml-2">
-              <IoMdArrowForward className="text-white bg-blue-500 outline-none" size={20}/>
-            </span>
-          </button>
+          <Link to="/login">
+            <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
+              Try Now!
+              <span className="flex ml-2">
+                <IoMdArrowForward
+                  className="text-white bg-blue-500 outline-none"
+                  size={20}
+                />
+              </span>
+            </button>
+          </Link>
         </ul>
 
         <div className="block md:hidden cursor-pointer" onClick={handleNav}>
@@ -50,7 +56,10 @@ function Navbar() {
           <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
             Try Now!
             <span className="flex ml-2">
-              <IoMdArrowForward className="text-white bg-blue-500 outline-none" size={20}/>
+              <IoMdArrowForward
+                className="text-white bg-blue-500 outline-none"
+                size={20}
+              />
             </span>
           </button>
         </ul>
@@ -66,5 +75,5 @@ const NavData = [
   { id: 2, title: "Features", link: "/" },
   { id: 3, title: "Pricing", link: "/" },
   { id: 4, title: "Testimonials", link: "/" },
-  {id:5, title:"FAQs",link:'/'}
+  { id: 5, title: "FAQs", link: "/" },
 ];
