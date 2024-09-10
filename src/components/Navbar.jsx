@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { IoMdArrowForward } from "react-icons/io";
-import Auth from "../Auth/Auth";
 import { Link } from "react-router-dom";
 function Navbar() {
   const [nav, setNav] = useState(false);
