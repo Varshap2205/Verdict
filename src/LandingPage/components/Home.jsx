@@ -1,4 +1,5 @@
 import React from 'react'
+import Hero from './Hero'
 import Poster1 from './Poster1'
 import Poster2 from './Poster2'
 import Features from './Features'
@@ -6,17 +7,22 @@ import Pricing from './Pricing'
 import Educate from './Educate'
 import Testimonial from './Testimonial'
 import Footer from '../../components/Footer'
+import Faq from './Faq'
+import Navbar from '../../components/Navbar'
 
 
 function Home() {
   return (
-    <div className='flex flex-col gap-3 mt-3'>
-      <Poster1/>
-      <Poster2 />
+    <div className='flex flex-col gap-5'>
+      <Navbar/>
+      <Hero/>
       <Features/>
-      <Pricing/>
+      <Poster1/>
       <Educate/>
+      <Poster2 />
+      <Pricing/>
       <Testimonial/>
+      <Faq/>
       <Footer/>
     </div>
   )
