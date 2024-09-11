@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white py-10 px-10">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between gap-10 px-5 md:px-0">
+    <footer className="bg-black text-white py-10 px-10 w-full">
+      <div className="container mx-auto flex flex-col md:flex-row justify-start gap-[100px] px-5 md:px-0 md:text-xl">
         <div>
           <h3 className="font-bold text-gray-400 mb-4">WHAT</h3>
           <ul>

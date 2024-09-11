@@ -1,4 +1,5 @@
 import React from 'react'
+import Hero from './Hero'
 import Poster1 from './Poster1'
 import Poster2 from './Poster2'
 import Features from './Features'
@@ -6,7 +7,12 @@ import Pricing from './Pricing'
 import Educate from './Educate'
 import Testimonial from './Testimonial'
 import Footer from '../../components/Footer'
+<<<<<<< HEAD
 import { useFirebase } from '../../Firebase/FireBase'
+=======
+import Faq from './Faq'
+import Navbar from '../../components/Navbar'
+>>>>>>> 20a32989a2900d6be88a8dc57d4d3a6f0d7c0f5b
 
 
 function Home() {
@@ -14,13 +20,16 @@ function Home() {
   console.log(firebase);
   
   return (
-    <div className='flex flex-col gap-3 mt-3'>
-      <Poster1/>
-      <Poster2 />
+    <div className='flex flex-col gap-5'>
+      <Navbar/>
+      <Hero/>
       <Features/>
-      <Pricing/>
+      <Poster1/>
       <Educate/>
+      <Poster2 />
+      <Pricing/>
       <Testimonial/>
+      <Faq/>
       <Footer/>
     </div>
   )

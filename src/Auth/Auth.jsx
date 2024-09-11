@@ -61,12 +61,16 @@ const Auth = () => {
                      <input type="checkbox" className='' />
                      <a href="/forget" className='hover:text-orange-400'>Forget password?</a>
                  </div>
+<<<<<<< HEAD
                  <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black' onClick={handleSignUp}>Sign Up</button>
+=======
+                 <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>Sign Up</button>
+>>>>>>> 20a32989a2900d6be88a8dc57d4d3a6f0d7c0f5b
              <div>
                  <p className='mt-5 pt-4 font-semibold text-[15px] text-center border-t border-dashed'>Or sign in with </p>
              <div className='flex flex-col'>
-                 <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black'>GOOGLE</button>
-                 <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black'>GITHUB</button>
+                 <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>GOOGLE</button>
+                 <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>GITHUB</button>
              </div>
              
              </div>
@@ -94,12 +98,21 @@ const Auth = () => {
                         <input type="checkbox" className='' />
                         <a href="/forget" className='hover:text-orange-400'>Forget password?</a>
                     </div>
+<<<<<<< HEAD
                     <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black' onClick={handleSignIn}>Sign In</button>
                 <div>
                     <p className='mt-5 pt-4 font-semibold text-[15px] text-center border-t border-dashed'>Or sign in with </p>
                 <div className='flex flex-col'>
                     <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black' onClick={handleGoogleSignIn}>GOOGLE</button>
                     <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black' onClick={handleGitHubSignIn}>GITHUB</button>
+=======
+                    <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>Sign In</button>
+                <div>
+                    <p className='mt-5 pt-4 font-semibold text-[15px] text-center border-t border-dashed'>Or sign in with </p>
+                <div className='flex flex-col'>
+                    <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>GOOGLE</button>
+                    <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>GITHUB</button>
+>>>>>>> 20a32989a2900d6be88a8dc57d4d3a6f0d7c0f5b
                 </div>
                 
                 </div>
