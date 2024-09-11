@@ -6,9 +6,13 @@ import Pricing from './Pricing'
 import Educate from './Educate'
 import Testimonial from './Testimonial'
 import Footer from '../../components/Footer'
+import { useFirebase } from '../../Firebase/FireBase'
 
 
 function Home() {
+  const firebase = useFirebase()
+  console.log(firebase);
+  
   return (
     <div className='flex flex-col gap-3 mt-3'>
       <Poster1/>

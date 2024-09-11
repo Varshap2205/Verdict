@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { IoMdArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
-
   const handleNav = () => {
     setNav(!nav);
   };
-
+  
   return (
     <>
       <nav className="bg-black stciky top-0 relative w-full p-5 border-b border-gray-800 text-white flex justify-around items-center">
@@ -23,12 +23,12 @@ function Navbar() {
               {d.title}
             </li>
           ))}
-          <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
+          <Link to='/login' className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
             Try Now!
             <span className="flex ml-2">
               <IoMdArrowForward className="text-white bg-blue-500 outline-none" size={20}/>
             </span>
-          </button>
+          </Link >
         </ul>
 
         <div className="block md:hidden cursor-pointer" onClick={handleNav}>
@@ -47,14 +47,16 @@ function Navbar() {
               {d.title}
             </li>
           ))}
-          <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
+
+          <Link to="/login"  className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
             Try Now!
             <span className="flex ml-2">
               <IoMdArrowForward className="text-white bg-blue-500 outline-none" size={20}/>
             </span>
-          </button>
+          </Link>  
         </ul>
       </div>
+      
     </>
   );
 }

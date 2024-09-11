@@ -4,13 +4,16 @@ import { Route,Routes } from 'react-router-dom';
 import Auth from './Auth/Auth';
 import Home from './LandingPage/components/Home';
 import { AiBot } from './Aibot/AiBot';
+import Navbar from './components/Navbar';
+
 function App() {
   return (
     <>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Auth />} />
-        <Route path="aibot" element={<AiBot/>}/>
+        <Route path="/aibot" element={<AiBot/>}/>
       </Routes>
     </>
   );
