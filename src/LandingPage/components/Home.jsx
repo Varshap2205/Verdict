@@ -7,13 +7,9 @@ import Pricing from './Pricing'
 import Educate from './Educate'
 import Testimonial from './Testimonial'
 import Footer from '../../components/Footer'
-<<<<<<< HEAD
 import { useFirebase } from '../../Firebase/FireBase'
-=======
 import Faq from './Faq'
 import Navbar from '../../components/Navbar'
->>>>>>> 20a32989a2900d6be88a8dc57d4d3a6f0d7c0f5b
-
 
 function Home() {
   const firebase = useFirebase()

@@ -10,10 +10,8 @@ import { FirebaseProvider } from "./Firebase/FireBase";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-<<<<<<< HEAD
-=======
     {/* <Navbar /> */}
->>>>>>> 20a32989a2900d6be88a8dc57d4d3a6f0d7c0f5b
+
     <BrowserRouter>
       <FirebaseProvider>
        <App /> 

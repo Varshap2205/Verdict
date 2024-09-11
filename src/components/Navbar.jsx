@@ -3,10 +3,7 @@ import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { IoMdArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
 
-=======
->>>>>>> 20a32989a2900d6be88a8dc57d4d3a6f0d7c0f5b
 function Navbar() {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -26,14 +23,6 @@ function Navbar() {
               {d.title}
             </li>
           ))}
-<<<<<<< HEAD
-          <Link to='/login' className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
-            Try Now!
-            <span className="flex ml-2">
-              <IoMdArrowForward className="text-white bg-blue-500 outline-none" size={20}/>
-            </span>
-          </Link >
-=======
           <Link to="/login">
             <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
               Try Now!
@@ -45,7 +34,6 @@ function Navbar() {
               </span>
             </button>
           </Link>
->>>>>>> 20a32989a2900d6be88a8dc57d4d3a6f0d7c0f5b
         </ul>
 
         <div className="block md:hidden cursor-pointer" onClick={handleNav}>
@@ -64,15 +52,6 @@ function Navbar() {
               {d.title}
             </li>
           ))}
-<<<<<<< HEAD
-
-          <Link to="/login"  className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
-            Try Now!
-            <span className="flex ml-2">
-              <IoMdArrowForward className="text-white bg-blue-500 outline-none" size={20}/>
-            </span>
-          </Link>  
-=======
           <Link to="/login">
             <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
               Try Now!
@@ -84,7 +63,6 @@ function Navbar() {
               </span>
             </button>
           </Link>
->>>>>>> 20a32989a2900d6be88a8dc57d4d3a6f0d7c0f5b
         </ul>
       </div>
       
