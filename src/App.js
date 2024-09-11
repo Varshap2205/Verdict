@@ -5,6 +5,7 @@ import Home from "./LandingPage/components/Home";
 import { AiBot } from "./Aibot/AiBot";
 import Faq from './LandingPage/components/Faq'
 import PageNotFound from './components/PageNotFound'
+import Sidebar1 from "./Dashboard/components/Sidebar1";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="aibot" element={<AiBot />} />
         <Route path="*" element={<PageNotFound />} />
         <Route path='faq' element={<Faq/>}/>
+        <Route path='/profile' element={<Sidebar1/>}></Route>
       </Routes>
     </>
   );
