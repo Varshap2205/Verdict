@@ -30,12 +30,12 @@ const Auth = () => {
                      <input type="checkbox" className='' />
                      <a href="/forget" className='hover:text-orange-400'>Forget password?</a>
                  </div>
-                 <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black'>Sign Up</button>
+                 <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>Sign Up</button>
              <div>
                  <p className='mt-5 pt-4 font-semibold text-[15px] text-center border-t border-dashed'>Or sign in with </p>
              <div className='flex flex-col'>
-                 <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black'>GOOGLE</button>
-                 <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black'>GITHUB</button>
+                 <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>GOOGLE</button>
+                 <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>GITHUB</button>
              </div>
              
              </div>
@@ -63,12 +63,12 @@ const Auth = () => {
                         <input type="checkbox" className='' />
                         <a href="/forget" className='hover:text-orange-400'>Forget password?</a>
                     </div>
-                    <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black'>Sign In</button>
+                    <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>Sign In</button>
                 <div>
                     <p className='mt-5 pt-4 font-semibold text-[15px] text-center border-t border-dashed'>Or sign in with </p>
                 <div className='flex flex-col'>
-                    <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black'>GOOGLE</button>
-                    <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black'>GITHUB</button>
+                    <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>GOOGLE</button>
+                    <button className='p-1 bg-blue-500 w-full rounded-sm mt-2 text-black'>GITHUB</button>
                 </div>
                 
                 </div>
