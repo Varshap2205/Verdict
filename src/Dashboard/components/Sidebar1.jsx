@@ -12,21 +12,18 @@ function Sidebar1() {
 
   return (
     <div className="relative">
-      {/* Hamburger menu icon (visible only when sidebar is closed) */}
       {!nav && (
         <div className="p-4 cursor-pointer" onClick={handleNav}>
           <IoIosMenu size={30} />
         </div>
       )}
 
-      {/* Sidebar */}
       <div
         className={`fixed left-0 top-0 w-[70%] sm:w-[50%] md:w-[20%] h-full bg-[#3c4043] p-5 transform ${
           nav ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
         <div className=" bg-[#3c4043] flex justify-end">
-          {/* Close icon (visible only when sidebar is open) */}
           <IoMdClose
             size={30}
             className="bg-[#3c4043] cursor-pointer text-white"
@@ -49,7 +46,6 @@ function Sidebar1() {
         </ul>
       </div>
 
-      {/* Overlay (visible only when sidebar is open) */}
       {nav && (
         <div
           className="fixed inset-0 bg-black opacity-50"
