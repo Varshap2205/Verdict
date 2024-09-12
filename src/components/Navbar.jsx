@@ -16,7 +16,6 @@ function Navbar() {
         <h1 className="text-2xl md:text-3xl font-bold cursor-pointer">
           Verdict
         </h1>
-
         <ul className="gap-4 hidden md:flex items-center">
           {NavData.map((d) => (
             <li key={d.id} className="nav">

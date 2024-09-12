@@ -67,7 +67,7 @@ const Auth = () => {
                             <a href="/forget" className='hover:text-orange-400'>Forget password?</a>
                         </div>
 
-                    <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black' onClick={handleSignUp}>Sign Up</button>
+                    <button className='p-1 bg-blue-400 w-full rounded-sm mt-2 text-black' onClick={handleSignUp}>Sign Up</button>
                     <div>
                         <p className='mt-5 pt-4 font-semibold text-[15px] text-center border-t border-dashed'>Or sign in with </p>
                         <div className='flex flex-col'>
@@ -110,8 +110,8 @@ const Auth = () => {
                     <div>
                         <p className='mt-5 pt-4 font-semibold text-[15px] text-center border-t border-dashed'>Or sign in with </p>
                         <div className='flex flex-col'>
-                            <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black' onClick={handleGoogleSignIn}>GOOGLE</button>
-                            <button className='p-1 bg-orange-400 w-full rounded-sm mt-2 text-black' onClick={handleGitHubSignIn}>GITHUB</button>
+                            <button className='p-1 bg-blue-400 w-full rounded-sm mt-2 text-black' onClick={handleGoogleSignIn}>GOOGLE</button>
+                            <button className='p-1 bg-blue-400 w-full rounded-sm mt-2 text-black' onClick={handleGitHubSignIn}>GITHUB</button>
                         </div>
                     </div>
                 </div>
@@ -120,7 +120,7 @@ const Auth = () => {
 
             <div className='h-[2rem] mt-5 bg-[#161616] justify-center '>
                 <p className='bg-[#161616] text-center'>New user? 
-                    <button onClick={()=>setCreateAccount(!createAccount)}  className='p-1 text-orange-400 font-semibold hover:text-blue-500'>{createAccount?"Sign in":"Sign up"}</button>
+                    <button onClick={()=>setCreateAccount(!createAccount)}  className='p-1 text-blue-400 font-semibold hover:text-blue-500'>{createAccount?"Sign in":"Sign up"}</button>
                 </p>
             </div>
           </div>
