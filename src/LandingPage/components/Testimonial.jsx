@@ -3,26 +3,26 @@ import React from "react";
 function Testimonial() {
   return (
     <section id="testimonials" className="w-[90%] mx-auto ">
-      <div class="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-        <h2 class="text-start text-4xl font-bold tracking-tight text-white sm:text-5xl">
+      <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+        <h2 className="text-start text-4xl font-bold tracking-tight text-white sm:text-5xl">
           Read trusted reviews from our customers
         </h2>
 
-        <div class="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
-          <div class="mb-8 sm:break-inside-avoid">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8 ">
-              <div class="flex items-center gap-4 bg-white">
+        <div className="mt-8 [column-fill:_balance] sm:columns-2 sm:gap-6 lg:columns-3 lg:gap-8">
+          <div className="mb-8 sm:break-inside-avoid">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8 ">
+              <div className="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover"
+                  className="size-14 rounded-full object-cover"
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
+                  <div className="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -30,7 +30,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5 "
+                      className="size-5 "
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -38,7 +38,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -46,7 +46,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -54,7 +54,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -62,13 +62,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
+                  <p className="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-black bg-white">
+              <p className="mt-4 text-black bg-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa
                 sit rerum incidunt, a consequuntur recusandae ab saepe illo est
                 quia obcaecati neque quibusdam eius accusamus error officiis
@@ -77,20 +77,20 @@ function Testimonial() {
             </blockquote>
           </div>
 
-          <div class="mb-8 sm:break-inside-avoid">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4 bg-white">
+          <div className="mb-8 sm:break-inside-avoid">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div className="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover"
+                  className="size-14 rounded-full object-cover"
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
+                  <div className="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -98,7 +98,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -106,7 +106,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -114,7 +114,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -122,7 +122,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -130,13 +130,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
+                  <p className="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700 bg-white">
+              <p className="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad
                 mollitia rerum quo unde neque atque molestias quas pariatur!
                 Sint, maxime?
@@ -144,20 +144,20 @@ function Testimonial() {
             </blockquote>
           </div>
 
-          <div class="mb-8 sm:break-inside-avoid">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4 bg-white">
+          <div className="mb-8 sm:break-inside-avoid">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div className="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover"
+                  className="size-14 rounded-full object-cover"
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
+                  <div className="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -165,7 +165,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -173,7 +173,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -181,7 +181,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -189,7 +189,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -197,13 +197,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
+                  <p className="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700 bg-white">
+              <p className="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reprehenderit esse delectus, maiores fugit, reiciendis culpa
                 inventore sint accusantium libero dolore eos quasi a ex aliquam
@@ -212,20 +212,20 @@ function Testimonial() {
             </blockquote>
           </div>
 
-          <div class="mb-8 sm:break-inside-avoid">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4 bg-white">
+          <div className="mb-8 sm:break-inside-avoid">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div className="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover"
+                  className="size-14 rounded-full object-cover"
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
+                  <div className="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -233,7 +233,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -241,7 +241,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -249,7 +249,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -257,7 +257,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -265,33 +265,33 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
+                  <p className="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700 bg-white">
+              <p className="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit,
                 fuga?
               </p>
             </blockquote>
           </div>
 
-          <div class="mb-8 sm:break-inside-avoid">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4 bg-white">
+          <div className="mb-8 sm:break-inside-avoid">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div className="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover"
+                  className="size-14 rounded-full object-cover"
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
+                  <div className="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -299,7 +299,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -307,7 +307,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -315,7 +315,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -323,7 +323,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -331,13 +331,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
+                  <p className="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700 bg-white">
+              <p className="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Cupiditate officia natus blanditiis rerum incidunt ex autem
                 repudiandae doloribus eveniet quia? Culpa commodi quae atque
@@ -349,20 +349,20 @@ function Testimonial() {
             </blockquote>
           </div>
 
-          <div class="mb-8 sm:break-inside-avoid">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4 bg-white">
+          <div className="mb-8 sm:break-inside-avoid">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div className="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover"
+                  className="size-14 rounded-full object-cover"
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
+                  <div className="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -370,7 +370,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -378,7 +378,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -386,7 +386,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -394,7 +394,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -402,33 +402,33 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
+                  <p className="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700 bg-white">
+              <p className="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Non,
                 rerum. Nobis laborum praesentium necessitatibus vero.
               </p>
             </blockquote>
           </div>
 
-          <div class="mb-8 sm:break-inside-avoid">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4 bg-white">
+          <div className="mb-8 sm:break-inside-avoid">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div className="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover"
+                  className="size-14 rounded-full object-cover"
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
+                  <div className="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -436,7 +436,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -444,7 +444,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -452,7 +452,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -460,7 +460,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -468,13 +468,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
+                  <p className="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700 bg-white">
+              <p className="mt-4 text-gray-700 bg-white">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Maiores quaerat quasi ipsa repellendus quam! Beatae pariatur
                 quia distinctio fugit repellendus repudiandae nostrum
@@ -483,20 +483,20 @@ function Testimonial() {
             </blockquote>
           </div>
 
-          <div class="mb-8 sm:break-inside-avoid">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4 bg-white">
+          <div className="mb-8 sm:break-inside-avoid">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div className="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover"
+                  className="size-14 rounded-full object-cover"
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
+                  <div className="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -504,7 +504,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -512,7 +512,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -520,7 +520,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -528,7 +528,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -536,33 +536,33 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
+                  <p className="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700 bg-white">
+              <p className="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit,
                 modi!
               </p>
             </blockquote>
           </div>
 
-          <div class="mb-8 sm:break-inside-avoid">
-            <blockquote class="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center gap-4 bg-white">
+          <div className="mb-8 sm:break-inside-avoid">
+            <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
+              <div className="flex items-center gap-4 bg-white">
                 <img
                   alt=""
                   src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
-                  class="size-14 rounded-full object-cover"
+                  className="size-14 rounded-full object-cover"
                 />
 
                 <div>
-                  <div class="flex justify-center gap-0.5 text-green-500 bg-white">
+                  <div className="flex justify-center gap-0.5 text-green-500 bg-white">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -570,7 +570,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -578,7 +578,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -586,7 +586,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -594,7 +594,7 @@ function Testimonial() {
                     </svg>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="size-5"
+                      className="size-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -602,13 +602,13 @@ function Testimonial() {
                     </svg>
                   </div>
 
-                  <p class="mt-0.5 text-lg font-medium text-gray-900 bg-white">
+                  <p className="mt-0.5 text-lg font-medium text-gray-900 bg-white">
                     Paul Starr
                   </p>
                 </div>
               </div>
 
-              <p class="mt-4 text-gray-700 bg-white">
+              <p className="mt-4 text-gray-700 bg-white">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 numquam, unde molestiae commodi temporibus dicta.
               </p>

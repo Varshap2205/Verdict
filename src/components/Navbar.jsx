@@ -3,13 +3,13 @@ import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { IoMdArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom";
+
 function Navbar() {
   const [nav, setNav] = useState(false);
-
   const handleNav = () => {
     setNav(!nav);
   };
-
+  
   return (
     <>
       <nav className="bg-black stciky top-0 relative w-full p-5 border-b border-gray-800 text-white flex justify-around items-center">
@@ -65,6 +65,7 @@ function Navbar() {
           </Link>
         </ul>
       </div>
+      
     </>
   );
 }
