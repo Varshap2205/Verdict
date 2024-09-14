@@ -1,38 +1,40 @@
 import React from "react";
 import profile from "../Assets/image1.avif";
 import { Link } from "react-router-dom";
+
 function Profile() {
   return (
-    <>
-      <div className="border-b border-gray-500 w-full h-full">
-        <div className="flex flex-col lg:gap-16 md:flex-row md:space-between">
-          <div className="bg-gray-900 w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden flex justify-center items-center mx-auto md:ml-20 md:mr-40 my-10 md:my-20">
-            <img
-              className="w-full h-full object-cover"
-              src={profile}
-              alt="Profile"
-            ></img>
-          </div>
+    <div className="mx-auto px-4 h-full border border-slate-400 rounded-md mt-10">
+      <div className="flex flex-col md:flex-row items-center justify-between">
+        {/* Profile Image */}
+        <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden bg-gray-900 flex justify-center items-center mx-auto md:mx-0 my-8">
+          <img
+            className="w-full h-full object-cover"
+            src={profile}
+            alt="Profile"
+          />
+        </div>
 
-          <div className="flex flex-col text-center md:text-left">
-            <h1 className="lg:mt-20 lg:mb-20  mb-5 text-4xl md:text-5xl mx-auto md:mx-40">
-              David
-            </h1>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12  mb-8">
-              <Link to="/Edit" className="">
-                {" "}
-                <button className="px-16 lg:px-20 flex text-lg justify-center py-3 bg-gray-500 w-1/3 text-white font-bold rounded-md ml-10">
-                  Edit
-                </button>
-              </Link>
-              <button className="px-5 py-3 bg-gray-500 w-1/3 text-white font-bold rounded-md text-lg">
-                Delete
+        {/* Profile Info and Actions */}
+        <div className="text-center md:text-left md:ml-16 flex-1">
+          <h1 className="text-4xl md:text-5xl font-semibold mb-6 md:mb-10">
+            David
+          </h1>
+
+          <div className="flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start gap-4 mb-8">
+            <Link to="/Edit">
+              <button className="px-8 py-3 bg-blue-600 hover:bg-blue-700 transition-colors text-white font-bold rounded-md shadow-md w-full md:w-auto">
+                Edit Profile
               </button>
-            </div>
+            </Link>
+
+            <button className="px-8 py-3 bg-red-600 hover:bg-red-700 transition-colors text-white font-bold rounded-md shadow-md w-full md:w-auto">
+              Delete Profile
+            </button>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

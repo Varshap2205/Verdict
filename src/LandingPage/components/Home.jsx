@@ -10,6 +10,7 @@ import Footer from '../../components/Footer'
 import { useFirebase } from '../../Firebase/FireBase'
 import Faq from './Faq'
 import Navbar from '../../components/Navbar'
+import Hire from './Hire'
 
 function Home() {
   const firebase = useFirebase()
@@ -23,6 +24,7 @@ function Home() {
       <Poster1/>
       <Educate/>
       <Poster2 />
+      <Hire/>
       <Pricing/>
       <Testimonial/>
       <Faq/>
