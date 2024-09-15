@@ -3,9 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Auth from "./Auth/User";
 import Home from "./LandingPage/components/Home";
 import AiBot from "./Aibot/components/AiBot";
-
 import Faq from "./LandingPage/components/Faq";
-
 import PageNotFound from "./components/PageNotFound";
 
 import Profile from "./Dashboard/components/Profile";
@@ -21,11 +19,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Auth />} />
 
-        <Route path="/auth" element={<Page />}>
-          <Route path="user" element={<Auth />} />
-          <Route path="loyer" element={<Loyer />} />
-        </Route>
-
         {/* Nested route structure under /auth */}
         <Route path="/auth" element={<Page />}>
           <Route path="user" element={<Auth />} />
@@ -36,12 +29,9 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/profile1" element={<Profile />} />
-
-        <Route path="*" element={<PageNotFound />} />
-        <Route path="/Edit" element={<EditProfile />} />
-
         <Route path="/edit" element={<EditProfile />} />
 
+        {/* Catch-all route for 404 errors */}
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
