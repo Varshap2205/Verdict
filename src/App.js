@@ -8,11 +8,11 @@ import Faq from "./LandingPage/components/Faq";
 import PageNotFound from "./components/PageNotFound";
 import Profile from "./Dashboard/components/Profile";
 import Page from "./Auth/Page";
-import Loyer from "./Auth/Loyer";
+import Lawyer from "./Auth/Lawyer";
 import EditProfile from "./Dashboard/components/EditProfile";
 import ProfilePage from "./Dashboard/ProfilePage";
 import HTU from '../src/HTU/HowToUSe'
-
+import Blog from "./Blog/Blog";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         {/* Nested route structure under /auth */}
         <Route path="/auth" element={<Page />}>
           <Route path="user" element={<Auth />} />
-          <Route path="loyer" element={<Loyer />} />
+          <Route path="lawyer" element={<Lawyer />} />
         </Route>
 
         <Route path="/edit" element={<EditProfile />} />

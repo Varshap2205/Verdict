@@ -12,14 +12,11 @@
     "nodemon": "^3.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-<<<<<<< HEAD
     "react-hook-form": "^7.53.0",
-=======
-    "react-icon": "^1.0.0",
->>>>>>> 34f8b314fa7b32cbfde416495bf5539ae1e3b178
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.1",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -48,6 +45,7 @@
   },
   "devDependencies": {
     "@types/react": "^18.3.5",
+    "@types/react-scroll": "^1.8.10",
     "tailwindcss": "^3.4.11"
   }
 }

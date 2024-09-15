@@ -1,10 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { createContext, useContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider,GithubAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-<<<<<<< HEAD
-=======
+
 // import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
->>>>>>> 34f8b314fa7b32cbfde416495bf5539ae1e3b178
+
 import { getFirestore,doc,getDoc,setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
