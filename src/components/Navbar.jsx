@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { IoMdArrowForward } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll"; // Import from react-scroll
+import { Link } from "react-router-dom"; // For other routing
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -12,14 +13,23 @@ function Navbar() {
   
   return (
     <>
-      <nav className="bg-black stciky top-0 relative w-full p-5 border-b border-gray-800 text-white flex justify-around items-center">
+      <nav className="bg-black sticky top-0 w-full p-5 border-b border-gray-800 text-white flex justify-around items-center">
         <h1 className="text-2xl md:text-3xl font-bold cursor-pointer">
           Verdict
         </h1>
         <ul className="gap-4 hidden md:flex items-center">
           {NavData.map((d) => (
             <li key={d.id} className="nav">
-              {d.title}
+              <ScrollLink
+                to={d.link} // Refers to the section ID
+                smooth={true} // Enable smooth scrolling
+                duration={500} // Scrolling duration
+                offset={-80} // Adjust according to your navbar height
+                spy={true} // Optional: makes link active when section is in view
+                activeClass="active"
+              >
+                {d.title}
+              </ScrollLink>
             </li>
           ))}
           <Link to="/login">
@@ -48,7 +58,17 @@ function Navbar() {
         <ul className="flex flex-col items-center gap-5">
           {NavData.map((d) => (
             <li key={d.id} className="text-white cursor-pointer text-lg">
-              {d.title}
+              <ScrollLink
+                to={d.link} 
+                smooth={true}
+                duration={500}
+                offset={-80}
+                spy={true}
+                activeClass="active"
+                onClick={handleNav} // Close mobile menu on click
+              >
+                {d.title}
+              </ScrollLink>
             </li>
           ))}
           <Link to="/login">
@@ -64,17 +84,17 @@ function Navbar() {
           </Link>
         </ul>
       </div>
-      
     </>
   );
 }
 
 export default Navbar;
 
+// Your NavData
 const NavData = [
-  { id: 1, title: "Home", link: "/" },
-  { id: 2, title: "Features", link: "/" },
-  { id: 3, title: "Pricing", link: "/" },
-  { id: 4, title: "Testimonials", link: "/" },
-  { id: 5, title: "FAQs", link: "/" },
+  { id: 1, title: "Home", link: "home" },
+  { id: 2, title: "Features", link: "features" },
+  { id: 3, title: "Pricing", link: "pricing" },
+  { id: 4, title: "Testimonials", link: "testimonials" },
+  { id: 5, title: "FAQs", link: "faqs" },
 ];

@@ -5,7 +5,7 @@ import { FaPeopleLine } from "react-icons/fa6";
 
 function Features() {
   return (
-    <section className='w-[95%] mx-auto'>
+    <section className='w-[95%] mx-auto' id='features'>
       <h1 className="text-center mb-5 capitalize pl-7 font-bold text-4xl md:text-5xl">Features</h1>
       <div className='grid grid-cols md:grid-cols-3 gap-3'>
         {FeatureData.map((e) => (

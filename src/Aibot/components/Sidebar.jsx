@@ -7,6 +7,7 @@ import {
   UserIcon,
 } from "@heroicons/react/outline";
 import "tailwindcss/tailwind.css";
+import { Link } from "react-router-dom";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,9 +41,9 @@ function App() {
             </li>
             <li className="mb-4 flex items-center bg-gray-900">
               <UserIcon className="h-5 w-5 mr-2 bg-gray-900" />
-              <a href="#profile" className="hover:underline bg-gray-900">
+              <Link to="/profile" className="hover:underline bg-gray-900">
                 Profile
-              </a>
+              </Link>
             </li>
             <li className="mb-4 flex items-center bg-gray-900">
               <CogIcon className="h-5 w-5 mr-2 bg-gray-900" />
