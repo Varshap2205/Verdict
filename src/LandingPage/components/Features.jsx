@@ -12,7 +12,7 @@ function Features() {
       </div>
 
       <div className='flex flex-wrap justify-center items-center text-white overflow-hidden'>
-    
+      
         <div className='bg-blue-500 w-64 sm:w-72 h-auto m-5 rounded-md relative group'>
           <img
             src={pics1}
@@ -26,7 +26,6 @@ function Features() {
           </p>
         </div>
 
-    
         <div className='bg-blue-500 w-64 sm:w-72 h-auto m-5 rounded-md relative group'>
           <img
             src={pics2}
@@ -40,7 +39,6 @@ function Features() {
           </p>
         </div>
 
-      
         <div className='bg-blue-500 w-64 sm:w-72 h-auto m-5 rounded-md relative group'>
           <img
             src={pics3}
@@ -49,17 +47,16 @@ function Features() {
           />
           <div className="absolute inset-0 border-2 border-transparent group-hover:border-white group-hover:rounded-lg transition-all duration-300 ease-in-out"></div>
           <h1 className='font-mono font-bold text-xl sm:text-2xl text-center mt-4'>Case Management</h1>
-          <p className='text-sm sm:text-lg p-3 text-center'>
+          <div className='text-sm sm:text-lg p-3 text-center'>
             Users' case statuses are visually represented:
             <ul className='list-disc list-inside'>
               <li>Red: Case not yet solved or assigned.</li>
               <li>Orange: Case is taken by a law practitioner and is being worked on.</li>
               <li>Green: Case successfully resolved.</li>
             </ul>
-          </p>
+          </div>
         </div>
 
-        
         <div className='bg-blue-500 w-64 sm:w-72 h-auto m-5 rounded-md relative group'>
           <img
             src={pics4}
@@ -72,9 +69,10 @@ function Features() {
             The platform connects users with verified law practitioners who can take up their cases and help resolve them.
           </p>
         </div>
+
       </div>
     </div>
-  )
+  );
 }
 
-export default Features
+export default Features;
