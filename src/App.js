@@ -14,21 +14,7 @@ import ProfilePage from "./Dashboard/ProfilePage";
 import HTU from '../src/HTU/HowToUSe'
 import Blog from "./Blog/Blog";
 import AprovalPage from './Auth/AprovalPage'
-import Sidebar1 from "./Dashboard/components/Sidebar1";
-import Lawyer from '../src/Auth/Lawyer'
-import EditProfile from "./Dashboard/components/EditProfile";
-import ProfilePage from "./Dashboard/ProfilePage";
-import HTU from "../src/HTU/HowToUSe";
-import Blog from "./Blog/Blog";
-import HTU from '../src/HTU/HowToUSe'
-import Blog from "./Blog/Blog";
-import AprovalPage from './Auth/AprovalPage'
-import Sidebar1 from "./Dashboard/components/Sidebar1";
-import Lawyer from '../src/Auth/Lawyer'
-import EditProfile from "./Dashboard/components/EditProfile";
-import ProfilePage from "./Dashboard/ProfilePage";
-import HTU from "../src/HTU/HowToUSe";
-import Blog from "./Blog/Blog";
+
 function App() {
   return (
     <>
@@ -42,35 +28,16 @@ function App() {
         <Route path="/auth" element={<Page />}>
           <Route path="user" element={<Auth />} />
           <Route path="Lawyer" element={<Lawyer />} />
-        </Route>
-
+        </Route>s
         <Route path="/aibot" element={<AiBot />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/profile1" element={<Profile />} />
-        <Route path="/aibot" element={<AiBot/>}/>
-        <Route path="aibot" element={<AiBot />} />
         <Route path="*" element={<PageNotFound />} />
-        <Route path='faq' element={<Faq/>}/>
-        <Route path='/profile' element={<Sidebar1/>}/>
         <Route path="/edit" element={<EditProfile />} />
         <Route path='howitworks' element={<HTU/>}/>
-
         <Route path="/login" element={<Auth />} />
-        {/* Nested route structure under /auth */}
-        <Route path="/auth" element={<Page />}>
-          <Route path="user" element={<Auth />} />
-          <Route path="lawyer" element={<Lawyer />} />
-        </Route>
-        <Route path="/edit" element={<EditProfile />} />
-        <Route path="howitworks" element={<HTU />} />
-        {/* Catch-all route for 404 errors */}
-        <Route path="*" element={<PageNotFound />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path='howitworks' element={<HTU />} />
-        <Route path='/blog' element={<Blog />} />
-        {/* Catch-all route for 404 errors */}
-        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </>
   );
