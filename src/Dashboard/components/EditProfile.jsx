@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useFirebase } from "../../Firebase/FireBase";
 
 function UserForm() {
+  const firebase = useFirebase()
+  const [uid,setUid] = useState('')
+  
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -11,7 +15,8 @@ function UserForm() {
     state: "",
     zip: "",
   });
-
+  
+  
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -19,9 +24,21 @@ function UserForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const getData=async()=>{
+    if (firebase.user) {
+      setUid(firebase.user.uid)
+      await firebase.getDocs(firebase.user.uid)
+    }
+  }
+
+  useEffect(()=>{
+    getData()
+  })
+  
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log("Form Data Submitted:", formData);
+   await firebase.updateProfile(formData,firebase.user.uid)
+    // console.log("Form Data Submitted:", formData);
   };
 
   return (
@@ -29,7 +46,7 @@ function UserForm() {
       <div className="max-w-2xl mx-auto mt-10 p-6  rounded-lg shadow-md">
         <h2 className="text-3xl font-extrabold text-center mb-6">
           {" "}
-          User Profile
+          User Profile{uid}
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
@@ -154,12 +171,21 @@ function UserForm() {
             </div>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex  flex-row  gap-3 justify-center">
             <button
               type="submit"
-              className="px-6 py-2 bg-gray-600 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none  mt-5"
+              className="px-6 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none  mt-5"
+            >
+              Upload Profile
+            </button>
+            <button
+              type="submit"
+              className="px-6 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none  mt-5"
             >
               Submit
+            </button>
+            <button className="px-6 py-2 bg-red-600 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none  mt-5">
+              Delete Profile
             </button>
           </div>
         </form>
