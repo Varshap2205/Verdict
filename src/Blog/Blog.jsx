@@ -9,9 +9,12 @@ import pic7 from './Assets/pic7.jpeg';
 import pic8 from './Assets/pic8.jpg';
 import pic9 from './Assets/pic9.jpg';
 import pic10 from './Assets/pic10.jpg';
+import Navbar from '../components/Navbar';
 
 const Blog = () => {
   return (
+    <>
+    <Navbar/>
     <div className='bg-black min-h-screen'>
       <div className="blog max-w-[1440px] mx-auto p-5 text-white">
         
@@ -102,6 +105,7 @@ const Blog = () => {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

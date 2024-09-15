@@ -11,6 +11,7 @@ import Page from "./Auth/Page";
 import Loyer from "./Auth/Loyer";
 import EditProfile from "./Dashboard/components/EditProfile";
 import ProfilePage from "./Dashboard/ProfilePage";
+import Blog from "./Blog/Blog";
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
         <Route path="/profile" element={<ProfilePage/>} />
         <Route path="/profile1" element={<Profile />} />
         <Route path="/edit" element={<EditProfile />} />
-
+        <Route path="/blog" element={<Blog/>}/>
         {/* Catch-all route for 404 errors */}
         <Route path="*" element={<PageNotFound />} />
       </Routes>
