@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Auth />} />
-        
+
         {/* Nested route structure under /auth */}
         <Route path="/auth" element={<Page />}>
           <Route path="user" element={<Auth />} />
@@ -27,7 +27,7 @@ function App() {
 
         <Route path="/aibot" element={<AiBot />} />
         <Route path="/faq" element={<Faq />} />
-        <Route path="/profile" element={<ProfilePage/>} />
+        <Route path="/profile" element={<ProfilePage />} />
         <Route path="/profile1" element={<Profile />} />
         <Route path="/edit" element={<EditProfile />} />
         <Route path='howitworks' element={<HTU/>}/>
