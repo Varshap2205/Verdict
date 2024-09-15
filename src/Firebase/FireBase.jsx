@@ -1,7 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { createContext, useContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider,GithubAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
+// import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
+import { getFirestore,doc,getDoc,setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAZkY2s-793MtfdaZh4uQy4JGUjT_gKrTk",
@@ -24,7 +25,7 @@ const githubProvider = new GithubAuthProvider()
 
 export const FirebaseProvider = (props)=>{
     const [user,setUser] = useState('')
-    const [error,setError] = useState("")
+    // const [error,setError] = useState("")
 
     useEffect(()=>{
         onAuthStateChanged(firebaseAuth,(user)=>{
