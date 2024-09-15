@@ -12,7 +12,10 @@ import Lawyer from '../src/Auth/Lawyer'
 import EditProfile from "./Dashboard/components/EditProfile";
 import ProfilePage from "./Dashboard/ProfilePage";
 import HTU from '../src/HTU/HowToUSe'
+<<<<<<< HEAD
 import Blog from "./Blog/Blog";
+=======
+>>>>>>> 22a94d73ab5d065658829f59e33245e6df82859a
 
 
 function App() {
@@ -27,7 +30,11 @@ function App() {
           <Route path="user" element={<Auth />} />
           <Route path="lawyer" element={<Lawyer />} />
         </Route>
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 22a94d73ab5d065658829f59e33245e6df82859a
         <Route path="/edit" element={<EditProfile />} />
         <Route path='howitworks' element={<HTU />} />
         <Route path='/blog' element={<Blog />} />
