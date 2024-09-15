@@ -18,7 +18,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Auth />} />
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> 89ea9753ddcd0d7e27f3e8e96184356ca718ddfe
         {/* Nested route structure under /auth */}
         <Route path="/auth" element={<Page />}>
           <Route path="user" element={<Auth />} />
