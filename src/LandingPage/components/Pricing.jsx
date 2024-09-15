@@ -25,7 +25,7 @@ function Pricing() {
               <span className="text-blue-500 mr-2 bg-[#3c4043]">✔️</span> Users can Hire Lawyers and Upload Case Documents
             </li>
           </ul>
-          <button className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg mt-44">
+          <button className="w-full py-3 bg-blue-500 hover:bg-blue-700 text-white rounded-lg mt-44">
             Choose plan
           </button>
         </div>
@@ -56,7 +56,7 @@ function Pricing() {
               <span className="text-blue-500 mr-2 bg-[#3c4043]">✔️</span> Status Of The Case Can Be Seen
             </li>
           </ul>
-          <button className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg mt-[75px]">
+          <button className="w-full py-3 bg-blue-500 hover:bg-blue-700 text-white rounded-lg mt-[75px]">
             Choose plan
           </button>
         </div>
