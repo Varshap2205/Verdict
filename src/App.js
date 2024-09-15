@@ -5,12 +5,12 @@ import Home from "./LandingPage/components/Home";
 import AiBot from "./Aibot/components/AiBot";
 import Faq from "./LandingPage/components/Faq";
 import PageNotFound from "./components/PageNotFound";
-
 import Profile from "./Dashboard/components/Profile";
 import Page from "./Auth/Page";
 import Loyer from "./Auth/Loyer";
 import EditProfile from "./Dashboard/components/EditProfile";
 import ProfilePage from "./Dashboard/ProfilePage";
+import HTU from '../src/HTU/HowToUSe'
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
         <Route path="/profile" element={<ProfilePage/>} />
         <Route path="/profile1" element={<Profile />} />
         <Route path="/edit" element={<EditProfile />} />
+        <Route path='howitworks' element={<HTU/>}/>
 
         {/* Catch-all route for 404 errors */}
         <Route path="*" element={<PageNotFound />} />
