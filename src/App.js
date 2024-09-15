@@ -8,54 +8,32 @@ import Faq from "./LandingPage/components/Faq";
 import PageNotFound from "./components/PageNotFound";
 import Profile from "./Dashboard/components/Profile";
 import Page from "./Auth/Page";
-<<<<<<< HEAD
 import Lawyer from "./Auth/Lawyer";
 import EditProfile from "./Dashboard/components/EditProfile";
 import ProfilePage from "./Dashboard/ProfilePage";
 import HTU from '../src/HTU/HowToUSe'
-<<<<<<< HEAD
 import Blog from "./Blog/Blog";
-=======
 import AprovalPage from './Auth/AprovalPage'
 import Sidebar1 from "./Dashboard/components/Sidebar1";
->>>>>>> bf8891b2720f05354b3729f0e33a3a087b346e90
-=======
 import Lawyer from '../src/Auth/Lawyer'
 import EditProfile from "./Dashboard/components/EditProfile";
 import ProfilePage from "./Dashboard/ProfilePage";
-<<<<<<< HEAD
 import HTU from "../src/HTU/HowToUSe";
 import Blog from "./Blog/Blog";
-=======
 import HTU from '../src/HTU/HowToUSe'
-<<<<<<< HEAD
 import Blog from "./Blog/Blog";
-=======
 import AprovalPage from './Auth/AprovalPage'
 import Sidebar1 from "./Dashboard/components/Sidebar1";
->>>>>>> bf8891b2720f05354b3729f0e33a3a087b346e90
-=======
 import Lawyer from '../src/Auth/Lawyer'
 import EditProfile from "./Dashboard/components/EditProfile";
 import ProfilePage from "./Dashboard/ProfilePage";
-<<<<<<< HEAD
 import HTU from "../src/HTU/HowToUSe";
 import Blog from "./Blog/Blog";
-=======
-import HTU from '../src/HTU/HowToUSe'
-import Blog from "./Blog/Blog";
-=======
->>>>>>> 22a94d73ab5d065658829f59e33245e6df82859a
-
->>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
-
->>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
-<<<<<<< HEAD
         <Route path='/login' element={<Auth/>}/>
         
         <Route path="/approval" element={<AprovalPage/>}/>
@@ -77,7 +55,6 @@ function App() {
         <Route path='/profile' element={<Sidebar1/>}/>
         <Route path="/edit" element={<EditProfile />} />
         <Route path='howitworks' element={<HTU/>}/>
-=======
 
         <Route path="/login" element={<Auth />} />
         {/* Nested route structure under /auth */}
@@ -85,27 +62,15 @@ function App() {
           <Route path="user" element={<Auth />} />
           <Route path="lawyer" element={<Lawyer />} />
         </Route>
-<<<<<<< HEAD
-        
-=======
->>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
-
->>>>>>> 22a94d73ab5d065658829f59e33245e6df82859a
         <Route path="/edit" element={<EditProfile />} />
-<<<<<<< HEAD
         <Route path="howitworks" element={<HTU />} />
         {/* Catch-all route for 404 errors */}
         <Route path="*" element={<PageNotFound />} />
         <Route path="/blog" element={<Blog />} />
-=======
         <Route path='howitworks' element={<HTU />} />
         <Route path='/blog' element={<Blog />} />
         {/* Catch-all route for 404 errors */}
         <Route path="*" element={<PageNotFound />} />
-<<<<<<< HEAD
-=======
-
->>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
       </Routes>
     </>
   );

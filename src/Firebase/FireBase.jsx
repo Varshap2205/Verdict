@@ -1,21 +1,12 @@
 import { initializeApp } from "firebase/app";
 import { createContext, useContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider,GithubAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-<<<<<<< HEAD
-
-<<<<<<< HEAD
-=======
 // import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
 import { getFirestore,doc,getDoc,setDoc, } from "firebase/firestore";
-=======
->>>>>>> bf8891b2720f05354b3729f0e33a3a087b346e90
 // import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
 
-=======
 // import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
->>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
 import { getFirestore,doc,getDoc,setDoc } from "firebase/firestore";
->>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
 
 const firebaseConfig = {
     apiKey: "AIzaSyAZkY2s-793MtfdaZh4uQy4JGUjT_gKrTk",
