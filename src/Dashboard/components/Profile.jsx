@@ -27,10 +27,6 @@ function Profile() {
                 Edit Profile
               </button>
             </Link>
-
-            <button className="px-8 py-3 bg-red-600 hover:bg-red-700 transition-colors text-white font-bold rounded-md shadow-md w-full md:w-auto">
-              Delete Profile
-            </button>
           </div>
         </div>
       </div>

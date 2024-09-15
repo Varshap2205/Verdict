@@ -154,12 +154,21 @@ function UserForm() {
             </div>
           </div>
 
-          <div className="flex justify-center">
+          <div className="flex  flex-row  gap-3 justify-center">
             <button
               type="submit"
-              className="px-6 py-2 bg-gray-600 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none  mt-5"
+              className="px-6 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none  mt-5"
+            >
+              Upload Profile
+            </button>
+            <button
+              type="submit"
+              className="px-6 py-2 bg-blue-600 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none  mt-5"
             >
               Submit
+            </button>
+            <button className="px-6 py-2 bg-red-600 text-white font-bold rounded-md hover:bg-gray-700 focus:outline-none  mt-5">
+              Delete Profile
             </button>
           </div>
         </form>
