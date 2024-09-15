@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import profile from "../Assets/image1.avif";
 import { Link } from "react-router-dom";
+import { useFirebase } from "../../Firebase/FireBase";
 
 function Profile() {
+
+  const [uid,setUid] = useState('')
+  const firebase = useFirebase()
+  const [user,setUser] = useState('')
+  
+  const getData =async()=>{
+    if (firebase.user) {
+      setUid(firebase.user.uid)
+      console.log(firebase.user.uid);
+
+      const user =await firebase.getDocs(firebase.user.uid)
+
+      console.log(user.data());
+      setUser(user.data())
+    } 
+  }
+  useEffect(()=>{
+       getData()
+  })
   return (
     <div className="mx-auto px-4 h-full border border-slate-400 rounded-md mt-10">
       <div className="flex flex-col md:flex-row items-center justify-between">
@@ -18,7 +38,7 @@ function Profile() {
         {/* Profile Info and Actions */}
         <div className="text-center md:text-left md:ml-16 flex-1">
           <h1 className="text-4xl md:text-5xl font-semibold mb-6 md:mb-10">
-            David
+            {user.displayName} {uid}
           </h1>
 
           <div className="flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start gap-4 mb-8">

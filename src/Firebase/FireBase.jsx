@@ -1,11 +1,9 @@
 import { initializeApp } from "firebase/app";
 import { createContext, useContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider,GithubAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-<<<<<<< HEAD
-=======
+
 // import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
->>>>>>> 34f8b314fa7b32cbfde416495bf5539ae1e3b178
-import { getFirestore,doc,getDoc,setDoc } from "firebase/firestore";
+import { getFirestore,doc,getDoc,setDoc, } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAZkY2s-793MtfdaZh4uQy4JGUjT_gKrTk",
@@ -42,47 +40,70 @@ export const FirebaseProvider = (props)=>{
 
     const isLoggedIn = user? true:false ;
 
-    const createUser=async(email,password)=>{
-        try {
-            const userCredetial =await createUserWithEmailAndPassword(firebaseAuth,email,password)
-            const user = userCredetial.user
-
-            await setDoc(doc(db,`users`,user.uid),{
-                uid:user.uid,
-                email:user.email,
-                displayName:user.displayName?user.displayName:'',
-                photoURL:user.photoURL?user.photoURL:"",
-                createdAt:new Date(),
-                roll:"user"
-            })
-      } catch (error) {
-         console.log(error);
-      }
-    }
-    const createLawyer=async(data)=>{
+    const createUser=async(data,who)=>{
         try {
             const userCredetial =await createUserWithEmailAndPassword(firebaseAuth,data.email,data.password)
             const user = userCredetial.user
 
-          const Lawyer=  await setDoc(doc(db,`lawyers`,user.uid),{
+            if (who === 'user') {
+             const userData= await setDoc(doc(db,`users`,user.uid),{
                 uid:user.uid,
-                name:data.name,
-                phone:data.phone,
                 email:user.email,
-                specialization:data.specialization,
+                name:user.displayName?user.displayName:`user${Math.random(0,100)}`,
                 photoURL:user.photoURL?user.photoURL:"",
-                experience:data.experience,
-                barAssociation:data.barAssociation,
                 createdAt:new Date(),
-                roll:"lawyer",
-                approval:false,
+                roll:false
             })
-            console.log(Lawyer);
+             console.log(userData);
+             
+            }
+            if(who === 'Lawyer'){
+                const Lawyer=  await setDoc(doc(db,`users`,user.uid),{
+                    uid:user.uid,
+                    name:data.name?data.name:`user${Math.random(0,100)}`,
+                    phone:data.phone,
+                    email:user.email,
+                    specialization:data.specialization,
+                    photoURL:user.photoURL?user.photoURL:"",
+                    experience:data.experience,
+                    barAssociation:data.barAssociation,
+                    createdAt:new Date(),
+                    roll:true,
+                    approval:false,
+                })
+                console.log(Lawyer);
+                
+            }
             
       } catch (error) {
          console.log(error);
       }
     }
+
+    // const createLawyer=async(data,who)=>{
+    //     try {
+    //         const userCredetial =await createUserWithEmailAndPassword(firebaseAuth,data.email,data.password)
+    //         const user = userCredetial.user
+
+    //       const Lawyer=  await setDoc(doc(db,`lawyers`,user.uid),{
+    //             uid:user.uid,
+    //             name:data.name,
+    //             phone:data.phone,
+    //             email:user.email,
+    //             specialization:data.specialization,
+    //             photoURL:user.photoURL?user.photoURL:"",
+    //             experience:data.experience,
+    //             barAssociation:data.barAssociation,
+    //             createdAt:new Date(),
+    //             roll:"lawyer",
+    //             approval:false,
+    //         })
+    //         console.log(Lawyer);
+            
+    //   } catch (error) {
+    //      console.log(error);
+    //   }
+    // }
     const signIn=async(email,password)=>{
         const User = signInWithEmailAndPassword(firebaseAuth,email,password)
         return User
@@ -129,9 +150,48 @@ export const FirebaseProvider = (props)=>{
             console.log(error);
            } 
       }
+      const getDocs =async(uid)=>{
+        try {
+            const userDoc= await getDoc(doc(db,'users',uid)) 
+            return userDoc
+           } catch (error) {
+             console.log(error);
+           }
+      }
+
+      const updateProfile=async(data,uid)=>{
+         try {
+            const userDocRef = doc(db,'users',uid)
+            // const updatedUser =  await userDocRef.update({
+            //     firstName:data.firstName,
+            //     lastName:data.lastName,
+            //     email:data.email,
+            //     phone:data.phone,
+            //     address:data.address,
+            //     city:data.city,
+            //     state:data.state,
+            //     // photoURL:data.photoURL,
+            // })
+            const updatedata = {
+                firstName:data.firstName,
+                lastName:data.lastName,
+                email:data.email,
+                phone:data.phone,
+                address:data.address,
+                city:data.city,
+                state:data.state,
+            }
+           const datas=  await setDoc(updatedata)
+           console.log(datas);
+            
+         } catch (error) {
+            console.log(error);
+            
+         }
+      }
     return(
         <FirebaseContext.Provider value={{
-            user,isLoggedIn,createUser,signIn,SignInWithGoogle,SignInWithGitHub,createLawyer
+            user,isLoggedIn,createUser,signIn,SignInWithGoogle,SignInWithGitHub,updateProfile,getDocs
         }}>
             {props.children}
         </FirebaseContext.Provider>

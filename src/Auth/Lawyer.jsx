@@ -25,9 +25,11 @@ const Lawyer = () => {
   const prevStep = () => setStep(step - 1);
 
   const onSubmit = async(data) => {
-    firebase.createLawyer(data)
+    const who = 'Lawyer'
+    firebase.createUser(data,who)
     navigate('/approval')
   };
+  
   const handleSignIn = async()=>{
    const user =await firebase.signIn(email,password)    
    console.log(user);
