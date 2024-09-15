@@ -1,7 +1,10 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const HowToUse = () => {
   return (
+    <>  
+    <Navbar/>
     <div>
       <div className='text-center flex justify-center items-center font-serif text-[50px] sm:text-[100px] md:text-[150px] feature-heading bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent'>
         WELCOME TO VERDICT!
@@ -70,6 +73,8 @@ const HowToUse = () => {
         </div>
       </div>
     </div>
+    </>
+  
   )
 }
 

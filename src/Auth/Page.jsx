@@ -7,11 +7,11 @@ const Page = () => {
   return (
     <>
        <div className=' flex w-full justify-center gap-10'>
-        <div className={` w-[50%] flex justify-center border-b p-2 font-semibold m-5 ${active?"border-blue-500":""}`} onClick={()=>setActive(true)}>
-            <Link to='/auth/user' >Login to get Loyer</Link>
+        <div className={` w-[50%] flex justify-center border-b p-2 font-semibold m-5 ${active?"border-blue-500 ":""}`} onClick={()=>setActive(true)}>
+            <Link to='/auth/user' className={` text-lg ${active?"bg-blue-500":" "} p-1 w-full text-center rounded-md`}>User can go here!</Link>
         </div>
         <div className={` w-[50%] flex justify-center border-b p-2 font-semibold m-5 ${active?"":"border-blue-500"} `} onClick={()=>setActive(false)}>
-            <Link to='/auth/loyer'>Login as Loyer</Link>
+            <Link to='/auth/lawyer' className={` text-lg ${active?"":"bg-blue-500 "} p-1 w-full text-center rounded-md`}>Lawyer can go here</Link>
         </div>
        </div>
        <Outlet/>
