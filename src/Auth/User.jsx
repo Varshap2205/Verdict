@@ -11,7 +11,7 @@ const Auth = () => {
      
     useEffect(()=>{
        if (firebase.isLoggedIn) {
-        navigate('/aibot')
+        navigate('/profile')
        }
     },[firebase,navigate])
 
@@ -25,7 +25,11 @@ const Auth = () => {
         } 
     }
     const handleSignUp =async()=>{
-        await firebase.createUser(email,password)
+        const who ='user'
+        const  data ={
+            email,password
+        }
+        await firebase.createUser(data,who)
         setEmail('')
         setPassword('')
     }

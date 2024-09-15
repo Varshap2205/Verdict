@@ -13,7 +13,12 @@ import Lawyer from "./Auth/Lawyer";
 import EditProfile from "./Dashboard/components/EditProfile";
 import ProfilePage from "./Dashboard/ProfilePage";
 import HTU from '../src/HTU/HowToUSe'
+<<<<<<< HEAD
 import Blog from "./Blog/Blog";
+=======
+import AprovalPage from './Auth/AprovalPage'
+import Sidebar1 from "./Dashboard/components/Sidebar1";
+>>>>>>> bf8891b2720f05354b3729f0e33a3a087b346e90
 =======
 import Lawyer from '../src/Auth/Lawyer'
 import EditProfile from "./Dashboard/components/EditProfile";
@@ -26,11 +31,35 @@ import Blog from "./Blog/Blog";
 
 >>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
 
+>>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
 function App() {
   return (
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+<<<<<<< HEAD
+        <Route path='/login' element={<Auth/>}/>
+        
+        <Route path="/approval" element={<AprovalPage/>}/>
+
+        {/* Nested route structure under /auth */}
+        <Route path="/auth" element={<Page />}>
+          <Route path="user" element={<Auth />} />
+          <Route path="Lawyer" element={<Lawyer />} />
+        </Route>
+
+        <Route path="/aibot" element={<AiBot />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/profile1" element={<Profile />} />
+        <Route path="/aibot" element={<AiBot/>}/>
+        <Route path="aibot" element={<AiBot />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path='faq' element={<Faq/>}/>
+        <Route path='/profile' element={<Sidebar1/>}/>
+        <Route path="/edit" element={<EditProfile />} />
+        <Route path='howitworks' element={<HTU/>}/>
+=======
 
         <Route path="/login" element={<Auth />} />
         {/* Nested route structure under /auth */}
@@ -41,6 +70,7 @@ function App() {
 <<<<<<< HEAD
         
 =======
+>>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
 
 >>>>>>> 22a94d73ab5d065658829f59e33245e6df82859a
         <Route path="/edit" element={<EditProfile />} />
@@ -48,7 +78,10 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         {/* Catch-all route for 404 errors */}
         <Route path="*" element={<PageNotFound />} />
+<<<<<<< HEAD
+=======
 
+>>>>>>> f6d8113071436469953ee6b6eb77ab0d7d21018b
       </Routes>
     </>
   );
