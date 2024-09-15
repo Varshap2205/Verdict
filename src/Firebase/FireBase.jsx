@@ -35,7 +35,7 @@ export const FirebaseProvider = (props)=>{
             setUser("")
           }
         })
-    },[user,onAuthStateChanged])
+    },[user])
 
     const isLoggedIn = user? true:false ;
 
@@ -49,8 +49,33 @@ export const FirebaseProvider = (props)=>{
                 email:user.email,
                 displayName:user.displayName?user.displayName:'',
                 photoURL:user.photoURL?user.photoURL:"",
-                createdAt:new Date()
+                createdAt:new Date(),
+                roll:"user"
             })
+      } catch (error) {
+         console.log(error);
+      }
+    }
+    const createLawyer=async(data)=>{
+        try {
+            const userCredetial =await createUserWithEmailAndPassword(firebaseAuth,data.email,data.password)
+            const user = userCredetial.user
+
+          const Lawyer=  await setDoc(doc(db,`lawyers`,user.uid),{
+                uid:user.uid,
+                name:data.name,
+                phone:data.phone,
+                email:user.email,
+                specialization:data.specialization,
+                photoURL:user.photoURL?user.photoURL:"",
+                experience:data.experience,
+                barAssociation:data.barAssociation,
+                createdAt:new Date(),
+                roll:"lawyer",
+                approval:false,
+            })
+            console.log(Lawyer);
+            
       } catch (error) {
          console.log(error);
       }
@@ -103,7 +128,7 @@ export const FirebaseProvider = (props)=>{
       }
     return(
         <FirebaseContext.Provider value={{
-            user,isLoggedIn,createUser,signIn,SignInWithGoogle,SignInWithGitHub
+            user,isLoggedIn,createUser,signIn,SignInWithGoogle,SignInWithGitHub,createLawyer
         }}>
             {props.children}
         </FirebaseContext.Provider>
