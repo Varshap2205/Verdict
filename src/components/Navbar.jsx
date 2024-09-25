@@ -53,13 +53,13 @@ function Navbar() {
       <div
         className={`${
           nav ? "translate-y-0 opacity-100" : "translate-y-[-200%] opacity-0"
-        } transform transition-all duration-500 ease-in-out bg-black absolute top-[80px] left-0 w-full md:hidden flex flex-col items-center gap-6 py-5 z-50`}
+        } transform transition-all duration-500 ease-in-out bg-black sticky top-0 left-0 w-full md:hidden flex flex-col items-center gap-6 py-5 z-50`}
       >
         <ul className="flex flex-col items-center gap-5">
           {NavData.map((d) => (
             <li key={d.id} className="text-white cursor-pointer text-lg">
               <ScrollLink
-                to={d.link} 
+                to={d.link}
                 smooth={true}
                 duration={500}
                 offset={-80}
