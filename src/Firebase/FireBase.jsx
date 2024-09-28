@@ -4,14 +4,14 @@ import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider,GithubAuthP
 import { getFirestore,doc,getDoc,setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAZkY2s-793MtfdaZh4uQy4JGUjT_gKrTk",
-    authDomain: "clone-war.firebaseapp.com",
-    projectId: "clone-war",
-    storageBucket: "clone-war.appspot.com",
-    messagingSenderId: "262435848381",
-    appId: "1:262435848381:web:db31642338f370067877d4",
-    measurementId: "G-WQ8KBD5WRZ"
-};
+    apiKey: process.env.FIREBASE_API_KEY,
+    authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.FIREBASE_PROJECT_ID,
+    storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.FIREBASE_APP_ID,
+    measureId:process.env.FIREBASE_APP_ID
+  };
 
 const FirebaseContext = createContext(null)
 export const useFirebase = ()=>useContext(FirebaseContext)
