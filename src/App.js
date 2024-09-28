@@ -14,10 +14,12 @@ import ProfilePage from "./Dashboard/ProfilePage";
 import HTU from '../src/HTU/HowToUSe'
 import Blog from "./Blog/Blog";
 import AprovalPage from './Auth/AprovalPage'
+import { FirebaseProvider } from "./Firebase/FireBase";
 
 function App() {
   return (
     <>
+    <FirebaseProvider>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path='/login' element={<Auth/>}/>
@@ -28,7 +30,7 @@ function App() {
         <Route path="/auth" element={<Page />}>
           <Route path="user" element={<Auth />} />
           <Route path="Lawyer" element={<Lawyer />} />
-        </Route>s
+        </Route>
         <Route path="/aibot" element={<AiBot />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/profile" element={<ProfilePage />} />
@@ -39,6 +41,7 @@ function App() {
         <Route path="/login" element={<Auth />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
+      </FirebaseProvider>
     </>
   );
 }

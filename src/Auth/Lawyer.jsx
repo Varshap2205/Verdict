@@ -167,7 +167,7 @@ const Lawyer = () => {
 
             <div className="flex justify-center gap-5">
               <h1 className='text-center  text-lg ml-10 '>Login as lawyer or</h1>
-              <button onClick={()=>setLogin(false)} className='text-pink-600 text-xl'>close</button>
+              <button onClick={()=>setLogin(false)} className='text-red-600 text-xl'>close</button>
             </div>
 
             <div>
@@ -179,7 +179,7 @@ const Lawyer = () => {
                         <input type="email" 
                         value={email}
                         onChange={(e)=>setEmail(e.target.value)}
-                        className='border mt-1 p-1 rounded-sm border-gray-500 focus:outline-none focus:border-orange-400 '
+                        className='border mt-1 p-1 rounded-sm border-gray-500 focus:outline-none focus:border-blue-500 '
                         />
                     </div>
 
@@ -188,7 +188,7 @@ const Lawyer = () => {
                         <input type="password" 
                         value={password}
                         onChange={(e)=>setPassword(e.target.value)}
-                        className='border mt-1 p-1 rounded-sm border-gray-500 focus:outline-none focus:border-orange-400 '
+                        className='border mt-1 p-1 rounded-sm border-gray-500 focus:outline-none focus:border-blue-500 '
                         />
                     </div>
                     <button className='p-1 bg-blue-400 w-full rounded-sm mt-2 text-black' onClick={handleSignIn}>Sign In</button>

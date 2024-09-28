@@ -1,12 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { createContext, useContext, useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider,GithubAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
-// import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
-import { getFirestore,doc,getDoc,setDoc, } from "firebase/firestore";
-// import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
-
-// import { getFirestore,addDoc,collection,doc,getDoc,setDoc } from "firebase/firestore";
-// import { getFirestore,doc,getDoc,setDoc } from "firebase/firestore";
+import { getFirestore,doc,getDoc,setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
     apiKey: "AIzaSyAZkY2s-793MtfdaZh4uQy4JGUjT_gKrTk",
@@ -52,7 +47,7 @@ export const FirebaseProvider = (props)=>{
              const userData= await setDoc(doc(db,`users`,user.uid),{
                 uid:user.uid,
                 email:user.email,
-                name:user.displayName?user.displayName:`user${Math.random(0,100)}`,
+                name:data.name,
                 photoURL:user.photoURL?user.photoURL:"",
                 createdAt:new Date(),
                 roll:false
@@ -82,7 +77,12 @@ export const FirebaseProvider = (props)=>{
          console.log(error);
       }
     }
-
+    const logOut =async ()=>{
+        return  firebaseAuth.signOut()
+         .then(()=>{
+            console.log("user log Out");
+         }).catch((error)=>console.log(error))
+    }
     // const createLawyer=async(data,who)=>{
     //     try {
     //         const userCredetial =await createUserWithEmailAndPassword(firebaseAuth,data.email,data.password)
@@ -115,7 +115,8 @@ export const FirebaseProvider = (props)=>{
         try {
             const userCredential=await signInWithPopup(firebaseAuth,googleProvider)
             const user = userCredential.user
-    
+            console.log(user.displayName);
+            
             const userDocRef = doc(db,'users',user.uid)
             const userDocSnap = await getDoc(userDocRef)
     
@@ -123,7 +124,7 @@ export const FirebaseProvider = (props)=>{
                 await setDoc(doc(db,`users`,user.uid),{
                     uid:user.uid,
                     email:user.email,
-                    displayName:user.displayName?user.displayName:'',
+                    name:user.displayName?user.displayName:`user${Math.random(0,1)}`,
                     photoURL:user.photoURL?user.photoURL:"",
                     createdAt:new Date()
                 })
@@ -135,7 +136,7 @@ export const FirebaseProvider = (props)=>{
     const SignInWithGitHub =async()=>{
         try {
             const userCredential=await signInWithPopup(firebaseAuth,githubProvider)
-            const user = userCredential.user
+            const user = userCredential.user.displayName
     
             const userDocRef = doc(db,'users',user.uid)
             const userDocSnap = await getDoc(userDocRef)
@@ -144,7 +145,7 @@ export const FirebaseProvider = (props)=>{
                 await setDoc(doc(db,`users`,user.uid),{
                     uid:user.uid,
                     email:user.email,
-                    displayName:user.displayName?user.displayName:'',
+                    name:user.displayName?user.displayName:`user${Math.random(0,1)}`,
                     photoURL:user.photoURL?user.photoURL:"",
                     createdAt:new Date()
                 })
@@ -164,7 +165,7 @@ export const FirebaseProvider = (props)=>{
 
       const updateProfile=async(data,uid)=>{
          try {
-            const userDocRef = doc(db,'users',uid)
+            // const userDocRef = doc(db,'users',uid)
             // const updatedUser =  await userDocRef.update({
             //     firstName:data.firstName,
             //     lastName:data.lastName,
@@ -194,7 +195,7 @@ export const FirebaseProvider = (props)=>{
       }
     return(
         <FirebaseContext.Provider value={{
-            user,isLoggedIn,createUser,signIn,SignInWithGoogle,SignInWithGitHub,updateProfile,getDocs
+            user,isLoggedIn,createUser,signIn,SignInWithGoogle,SignInWithGitHub,updateProfile,getDocs,logOut
         }}>
             {props.children}
         </FirebaseContext.Provider>

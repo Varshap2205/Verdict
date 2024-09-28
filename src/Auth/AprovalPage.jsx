@@ -13,10 +13,9 @@ const AprovalPage = () => {
     }else{
         Navigate('/auth/lawyer')
     }
-  })
-   
+  },[firebase.user,Navigate])
   return (
-    <div>hiii</div>
+    <div>{user}</div>
   )
 }
 

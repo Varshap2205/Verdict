@@ -2,57 +2,66 @@
 import React, { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import { IoIosMenu } from "react-icons/io";
+import { useFirebase } from "../../Firebase/FireBase"; // Ensure this is correct
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Sidebar1() {
+  const firebase = useFirebase();
   const [nav, setNav] = useState(false);
+  const navigate = useNavigate();
 
-  const handleNav = () => {
-    setNav(!nav);
+  const handleSignOut = async (e) => {
+    // Prevent the click event from closing the sidebar
+    e.stopPropagation();
+    
+    try {
+      await firebase.logOut(); // Ensure logOut is properly implemented in Firebase
+      navigate("/"); // Redirect after successful logout
+    } catch (error) {
+      console.error("Error logging out:", error);
+      // You can show an error message to the user here if needed
+    }
   };
 
   return (
-    <div className="relative">
-      {!nav && (
-        <div className="p-4 cursor-pointer" onClick={handleNav}>
-          <IoIosMenu size={30} />
-        </div>
-      )}
-
-      <div
-        className={`fixed left-0 top-0 w-[70%] sm:w-[50%] md:w-[20%] h-full bg-[#3c4043] p-5 transform ${
-          nav ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out`}
-      >
-        <div className=" bg-[#3c4043] flex justify-end">
-          <IoMdClose
-            size={30}
-            className="bg-[#3c4043] cursor-pointer text-white"
-            onClick={handleNav}
-          />
-        </div>
-        <ul className="flex flex-col gap-5 uppercase text-xl text-white bg-[#3c4043] hover:text-blue-400">
-          <li className="bg-[#3c4043] border-b border-gray-200 py-2 cursor-pointe hover:text-blue-500">
-            Home
-          </li>
-          <li className="bg-[#3c4043] border-b border-gray-200 py-2 cursor-pointer hover:text-blue-400">
-            Verdict AI
-          </li>
-          <li className="bg-[#3c4043] border-b border-gray-200 py-2 cursor-pointer hover:text-blue-400">
-            Hire a lawyer
-          </li>
-          <li className="bg-[#3c4043] border-b border-gray-200 py-2 cursor-pointer hover:text-blue-400">
-            Blogs
-          </li>
-        </ul>
+   <>
+      <div className="">
+        {nav?(
+          <>
+            <div className="bg-[#161616] flex flex-col w-[13rem] h-[100vh]">
+              <div className="bg-[#161616] rounded-full ml-1 mt-2" onClick={()=>setNav(false)}>
+                <IoMdClose size={35} className="bg-[#161616] rounded-full p-1"/>
+              </div>
+              <div className="bg-[#161616] flex flex-col rounded-full mt-1 p-2">
+                <div className="bg-[#161616] w-[10rem] border-b mt-2 ">
+                   <Link to='/#' className="bg-[#161616] text-xl">Home</Link>
+                </div>
+                <div className="bg-[#161616] w-[10rem] border-b mt-2 ">
+                   <Link to='/#' className="bg-[#161616] text-xl">Verdict AI</Link>
+                </div>
+                <div className="bg-[#161616] w-[10rem] border-b mt-2 ">
+                   <Link to='/#' className="bg-[#161616] text-xl">Hire a lawyer</Link>
+                </div>
+                <div className="bg-[#161616] w-[10rem] border-b mt-2 ">
+                   <Link to='/#' className="bg-[#161616] text-xl">Blogs</Link>
+                </div>
+                <div className="bg-[#161616] w-[10rem] border-b mt-2 ">
+                  <button onClick={handleSignOut} className="text-xl">Log out</button>
+                </div>
+              </div>
+            </div>
+          </>
+          
+        ):(
+          <>
+           <div className="mt-6 ml-6 cursor-pointer  " onClick={()=>setNav(true)}>
+             <IoIosMenu size={35} className="bg-[#161616] rounded-full p-1"/>
+           </div>
+          </>
+        )}
       </div>
-
-      {nav && (
-        <div
-          className="fixed inset-0 bg-black opacity-50"
-          onClick={handleNav}
-        ></div>
-      )}
-    </div>
+   </>
   );
 }
 

@@ -10,10 +10,11 @@ function Navbar() {
   const handleNav = () => {
     setNav(!nav);
   };
-  
+
   return (
     <>
-      <nav className="bg-black sticky top-0 w-full p-5 border-b border-gray-800 text-white flex justify-around items-center">
+      {/* Sticky navbar */}
+      <nav className="bg-black sticky top-0 w-full p-5 border-b border-gray-800 text-white flex justify-between items-center z-50">
         <h1 className="text-2xl md:text-3xl font-bold cursor-pointer">
           Verdict
         </h1>
@@ -45,15 +46,16 @@ function Navbar() {
           </Link>
         </ul>
 
-        <div className="block md:hidden cursor-pointer" onClick={handleNav}>
+        <div className="block md:hidden cursor-pointer z-50" onClick={handleNav}>
           {!nav ? <IoIosMenu size={25} /> : <MdClose size={25} />}
         </div>
       </nav>
 
+      {/* Mobile Menu */}
       <div
         className={`${
           nav ? "translate-y-0 opacity-100" : "translate-y-[-200%] opacity-0"
-        } transform transition-all duration-500 ease-in-out bg-black sticky top-0 left-0 w-full md:hidden flex flex-col items-center gap-6 py-5 z-50`}
+        } transform transition-all duration-500 ease-in-out bg-black fixed top-0 left-0 w-full h-screen md:hidden flex flex-col items-center gap-6 py-5 z-40`}
       >
         <ul className="flex flex-col items-center gap-5">
           {NavData.map((d) => (
