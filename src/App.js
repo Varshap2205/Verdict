@@ -15,6 +15,7 @@ import HTU from '../src/HTU/HowToUSe'
 import Blog from "./Blog/Blog";
 import AprovalPage from './Auth/AprovalPage'
 import { FirebaseProvider } from "./Firebase/FireBase";
+import ComingSoon from "./Dashboard/components/ComingSoon";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
         <Route path='howitworks' element={<HTU/>}/>
         <Route path="/login" element={<Auth />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/comingsoon" element={<ComingSoon/>}/>
       </Routes>
       </FirebaseProvider>
     </>

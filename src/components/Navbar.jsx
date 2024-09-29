@@ -2,13 +2,20 @@ import React, { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { MdClose } from "react-icons/md";
 import { IoMdArrowForward } from "react-icons/io";
-import { Link as ScrollLink } from "react-scroll"; // Import from react-scroll
-import { Link } from "react-router-dom"; // For other routing
+import { Link as ScrollLink } from "react-scroll"; // For smooth scrolling between sections
+import { Link } from "react-router-dom"; // For routing between pages
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+
+  // Toggle mobile menu
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  // Close the menu after clicking any link
+  const closeMenu = () => {
+    setNav(false);
   };
 
   return (
@@ -18,15 +25,17 @@ function Navbar() {
         <h1 className="text-2xl md:text-3xl font-bold cursor-pointer">
           Verdict
         </h1>
+
+        {/* Desktop Menu */}
         <ul className="gap-4 hidden md:flex items-center">
           {NavData.map((d) => (
             <li key={d.id} className="nav">
               <ScrollLink
-                to={d.link} // Refers to the section ID
-                smooth={true} // Enable smooth scrolling
-                duration={500} // Scrolling duration
-                offset={-80} // Adjust according to your navbar height
-                spy={true} // Optional: makes link active when section is in view
+                to={d.link} // Smooth scroll to section
+                smooth={true}
+                duration={500}
+                offset={-80} // Adjust for navbar height
+                spy={true}
                 activeClass="active"
               >
                 {d.title}
@@ -46,6 +55,7 @@ function Navbar() {
           </Link>
         </ul>
 
+        {/* Mobile Menu Icon */}
         <div className="block md:hidden cursor-pointer z-50" onClick={handleNav}>
           {!nav ? <IoIosMenu size={25} /> : <MdClose size={25} />}
         </div>
@@ -61,19 +71,21 @@ function Navbar() {
           {NavData.map((d) => (
             <li key={d.id} className="text-white cursor-pointer text-lg">
               <ScrollLink
-                to={d.link}
+                to={d.link} // Smooth scroll to section
                 smooth={true}
                 duration={500}
-                offset={-80}
+                offset={-80} // Adjust for navbar height
                 spy={true}
                 activeClass="active"
-                onClick={handleNav} // Close mobile menu on click
+                onClick={closeMenu} // Close mobile menu on click
               >
                 {d.title}
               </ScrollLink>
             </li>
           ))}
-          <Link to="/login">
+
+          {/* Link to Login page */}
+          <Link to="/login" onClick={closeMenu}>
             <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
               Try Now!
               <span className="flex ml-2">

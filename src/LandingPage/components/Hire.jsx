@@ -1,6 +1,7 @@
 import React from 'react';
 import lawyer from './assets/laywerImg.jpeg'
 import { IoMdArrowForward } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 const Hire = () => {
   return (
@@ -20,12 +21,12 @@ const Hire = () => {
         <p className="mb-6 text-lg bg-[#3c4043]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquam itaque voluptas autem, unde aspernatur.
         </p>
-        <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
+        <Link to={'/howitworks'} className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
           learn more!
           <span className="flex ml-2">
             <IoMdArrowForward className="text-white bg-blue-500 outline-none" size={20}/>
           </span>
-        </button>
+        </Link>
       </div>
     </section>
   );

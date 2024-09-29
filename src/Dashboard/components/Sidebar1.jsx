@@ -6,6 +6,7 @@ import { useFirebase } from "../../Firebase/FireBase"; // Ensure this is correct
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 function Sidebar1() {
   const firebase = useFirebase();
   const [nav, setNav] = useState(false);
@@ -38,13 +39,13 @@ function Sidebar1() {
                    <Link to='/#' className="bg-[#161616] text-xl">Home</Link>
                 </div>
                 <div className="bg-[#161616] w-[10rem] border-b mt-2 ">
-                   <Link to='/#' className="bg-[#161616] text-xl">Verdict AI</Link>
+                   <Link to='/comingsoon' className="bg-[#161616] text-xl">Verdict AI</Link>
                 </div>
                 <div className="bg-[#161616] w-[10rem] border-b mt-2 ">
-                   <Link to='/#' className="bg-[#161616] text-xl">Hire a lawyer</Link>
+                   <Link to='/comingsoon' className="bg-[#161616] text-xl">Hire a lawyer</Link>
                 </div>
                 <div className="bg-[#161616] w-[10rem] border-b mt-2 ">
-                   <Link to='/#' className="bg-[#161616] text-xl">Blogs</Link>
+                   <Link to='/blog' className="bg-[#161616] text-xl">Blogs</Link>
                 </div>
                 <div className="bg-[#161616] w-[10rem] border-b mt-2 ">
                   <button onClick={handleSignOut} className="text-xl">Log out</button>

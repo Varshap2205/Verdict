@@ -1,7 +1,7 @@
 import React from "react";
 import { IoMdArrowForward } from "react-icons/io";
 import blogPhoto from "./assets/blogPhoto.jpg";
-
+import { Link } from "react-router-dom";
 function Educate() {
   return (
     <section
@@ -15,12 +15,12 @@ function Educate() {
           with Confidence – Your Guide to Understanding and Defending Your\
           Rights."}
         </p>
-        <button className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
+        <Link to={'/blog'} className="text-white text-lg capitalize bg-blue-500 px-4 py-2 rounded-md transform hover:scale-110 transition-transform duration-600 hover:font-bold flex items-center ml-6">
           learn more!
           <span className="flex ml-2">
             <IoMdArrowForward className="text-white bg-blue-500 outline-none" size={20}/>
           </span>
-        </button>
+        </Link>
       </div>
       <div className="mt-3 md:mt-none md:rounded-md">
         <img src={blogPhoto} alt="blogging" className='w-[100%]' />
